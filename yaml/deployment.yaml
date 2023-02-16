@@ -1,0 +1,8 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: test-k8s
+spec:
+  replicas: 2
+  selector: {matchLabels: {app: test-k8s}}
+  template: {metadata: {labels: {app: test-k8s}}, spec: {containers: [{name: test-k8s, image: 'ccr.ccs.tencentyun.com/k8s-tutorial/test-k8s:v1'}]}}

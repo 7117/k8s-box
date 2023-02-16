@@ -1,0 +1,16 @@
+[root@iZ8vbc0i2ferh5v48aedg8Z test-k8s]# kubectl get pods  -o wide
+@REM 可以查看事件，一个流程，看有没有bug
+[root@iZ8vbc0i2ferh5v48aedg8Z test-k8s]# kubectl  describe pod -n default test-k8s-3722881942-88sxr
+@REM 查看日志
+[root@iZ8vbc0i2ferh5v48aedg8Z test-k8s]# kubectl logs -n default test-k8s-3722881942-88sxr
+@REM 在线查看日志
+[root@iZ8vbc0i2ferh5v48aedg8Z test-k8s]# kubectl logs -n default test-k8s-3722881942-88sxr  -f
+@REM 通过k8s进入到一个容器之中
+[root@iZ8vbc0i2ferh5v48aedg8Z test-k8s]# kubectl exec -it  -n default test-k8s-3722881942-88sxr -- bash
+@REM 修改后的yaml应用新的yaml文件生效命令
+[root@iZ8vbc0i2ferh5v48aedg8Z yaml]# kubectl apply -f Deployment.yaml
+@REM 扩缩容
+[root@iZ8vbc0i2ferh5v48aedg8Z yaml]# kubectl scale deployment test-k8s --replicas=2
+@REM 端口转发
+[root@iZ8vbc0i2ferh5v48aedg8Z yaml]# kubectl port-forward nodeapp   8081:8081
+
