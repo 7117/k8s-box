@@ -1,0 +1,11 @@
+k8s
+笔记：https://gitee.com/yooome/golang/blob/main/21-k8s%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/Kubernetes%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B.md
+视频：https://www.bilibili.com/video/BV1Qv41167ck/
+关键词：Kubernetes(K8S) 入门进阶实战完整教程，黑马程序员K8S全套教程（基础+高级）
+docker
+视频：https://www.bilibili.com/video/BV1vo4y1T73j
+关键词：黑马Docker从入门到实战教程，1套精通docker
+学习开始时间：2023年9月15日
+学习完成时间：2023年9月28日
+耗时：13天
+第一次复习完成时间：2023年9月30日
